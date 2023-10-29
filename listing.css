@@ -1,0 +1,462 @@
+body{
+    margin:auto
+}
+a{
+    text-decoration:none;
+}
+header{
+    height:60px;
+    color:#fff;
+    background-color:#3b2632
+}
+#brand{
+    float:left;
+    margin-left:2%;
+    font-size:35px;
+
+}
+#brand >a{
+    color:white !important
+}
+#social{
+    float:right;
+    margin-right:2%;
+}
+.socialLogo{
+    height:50px;
+}
+#content
+{
+    width:80%;
+    display:inline-block;
+    margin-left:10%;
+    margin-top:2%
+}
+#filterDiv{
+    height:550px;
+    width:20%;
+    border:2px solid gray;
+    float:left
+    
+}
+#contentDiv{
+    height:800px;
+    width:75%;
+    marfin-left:4%;
+    border:2px solid gray;
+    float:left;
+
+}
+.noborder{
+    border:none
+}* {
+	margin: 0px;
+	padding: 0px;
+}
+
+body {
+	font-size: 1rem;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 400;
+	color: #000000;
+}
+
+html,
+body {
+	height: 100%;
+}
+
+li {
+	list-style: none;
+}
+
+.d-flex {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+/* Fonts */
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+
+
+/* ========================== 
+	Page css start here
+ ===========================*/
+
+
+/* ========================== 
+	header css start here
+ ===========================*/
+
+#header {
+	align-items: center;
+	height: 5rem;
+	padding: 0rem 2%;
+	box-shadow: 0 4px 12px 0 rgb(0 0 0 / 5%);
+	margin-bottom: 2rem;
+	background: #06034e;
+}
+
+.logo {
+	font-family: 'DTCOkraSans1';
+	font-size: 1rem;
+	letter-spacing: 0.5rem;
+}
+
+.location-logo {
+	align-items: center;
+	padding: 0rem 0.5rem;
+	background: #f5f5f6;
+}
+
+#location {
+	width: 200px;
+	border: 0px;
+	outline: none;
+	font-family: 'Montserrat', sans-serif;
+	background: #f5f5f6;
+}
+
+.location_wrap {
+	background: #f5f5f6;
+	height: 41px;
+	align-items: center;
+	border-top-left-radius: 5px;
+	border-bottom-left-radius: 5px;
+}
+
+.searchwrap {
+	background: #f5f5f6;
+	height: 41px;
+	border-top-right-radius: 5px;
+	border-bottom-right-radius: 5px;
+}
+
+.search {
+	border-radius: 5px;
+	box-shadow: rgb(28 28 28 / 8%) 0px 2px 8px;
+	align-items: center;
+}
+
+.inputsearch {
+	background: #f5f5f6;
+	border: 0px;
+	outline: none;
+	padding: 0.8rem;
+	width: 400px;
+	border-top-right-radius: 5px;
+	border-bottom-right-radius: 5px;
+	font-size: 0.8rem;
+	font-family: 'Montserrat', sans-serif;
+	text-transform: capitalize;
+}
+
+.searchicon {
+	display: flex;
+	align-items: center;
+	background: #f5f5f6;
+	border-radius: 5px;
+	position: relative;
+}
+
+.searchicon::after {
+	background: #000000;
+	height: 20px;
+	position: absolute;
+	top: 50%;
+	width: 1px;
+	left: 15px;
+	transform: translateY(-50%);
+	content: '';
+}
+
+.submitsearch [name="search-outline"] {
+	position: relative;
+	top: 1px;
+}
+
+.location-logo [name="location-outline"] {
+	color: #ff7e8b
+}
+
+.submitsearch {
+	height: 100%;
+	outline: none;
+	background: #f5f5f6;
+	border: 0px;
+	padding-left: 2rem;
+}
+
+.desktop-actions ul {
+	text-align: center;
+	gap: 2rem;
+	color: #ffffff;
+}
+
+.desktop-actions ul li a {
+	color: #ffffff;
+	text-decoration: none;
+}
+
+.desktop-actions ul li span {
+	display: block;
+	font-size: 0.7rem;
+}
+
+/* ========================== 
+	header css end here
+ ===========================*/
+.sortwrap {
+	justify-content: center;
+}
+
+.sortwrap h4 {
+	text-transform: uppercase;
+	padding-top: 1rem;
+	margin-right: 2rem;
+}
+
+.sortwrap ul {
+	display: flex;
+	justify-content: space-evenly;
+	border: 1px solid grey;
+	align-items: center;
+	margin-bottom: 2rem;
+	max-width: 780px;
+
+}
+
+.sortwrap ul li {
+	text-transform: capitalize;
+	padding: .9rem 0rem;
+	font-size: 0.9rem;
+	text-align: center;
+	width: 130px;
+	transition: all 0.3s ease-in-out;
+}
+
+.sortwrap ul li:hover {
+	background: grey;
+	color: #ffffff;
+	cursor: pointer;
+}
+
+.sortwrap ul li::after:not(:last-child) {
+	border-right: 1px solid grey;
+}
+
+/* ========================== 
+	Left column css start here
+ ===========================*/
+.filter {
+	border: 1px solid #e9e9ed;
+	width: 32%
+}
+
+.filter h4 {
+	text-transform: uppercase;
+	padding: 1.5rem 1.5rem 0rem 1.5rem;
+}
+
+.filter ul {
+	border-bottom: 1px solid #e9e9ed;
+}
+
+.filter ul li {
+	margin: 1.1rem 1.1rem 1rem 1.5rem;
+	list-style: none;
+	font-size: 0.8rem;
+}
+
+.filter ul li label {
+	cursor: pointer;
+	padding-left: 1rem;
+}
+
+/* ========================== 
+	Left column css end here
+ ===========================*/
+
+
+/* ========================== 
+	Right column css start here
+ ===========================*/
+.product_list_wrap {
+	border: 1px solid #fc04fc;
+	border-left: 0px;
+}
+
+.product_list {
+	display: flex;
+	gap: 0.5rem;
+	row-gap: 1rem;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
+
+.product-base {
+	width: 210px;
+}
+
+.product_list li {
+	padding: 0.5rem 0.5rem 1rem 0.5rem;
+}
+
+.product_list li:hover {
+	box-shadow: 0 2px 16px 4px rgb(40 44 63 / 7%);
+}
+
+.product_list li:hover .ordernow span {
+	padding-right: 15px;
+}
+
+.product_list li:hover .ordernow span::after {
+	opacity: 1;
+	right: 0;
+}
+
+.product_list li a {
+	text-decoration: none;
+	color: #282c3f;
+}
+
+.product_list li a>img {
+	width: 100%;
+}
+
+.productinfo {
+	padding-left: 0.5rem;
+}
+
+.rating {
+	font-size: 0.75rem;
+	margin-bottom: 1rem;
+	display: block;
+	font-weight: 700;
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+	padding-right: 0.5rem;
+	padding-top: 0.3rem;
+}
+
+.rating [name="star"] {
+	color: #149590;
+}
+
+.rating [name="star-half-outline"] {
+	color: #149590;
+}
+
+.productinfo h3 {
+	font-size: 0.8rem;
+}
+
+.productinfo p {
+	font-size: 0.7rem;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	margin-top: 0.5rem;
+}
+
+.price {
+	font-size: 0.7rem;
+	margin-top: 0.5rem;
+}
+
+.pricetag {
+	font-size: 0.7rem;
+	margin-top: 0.5rem;
+	font-weight: 700;
+}
+
+.pricestrike {
+	text-decoration: line-through;
+}
+
+.priceoff {
+	color: #ff905a;
+}
+
+.ordernow {
+	background: #f54004c5;
+	border-radius: 5px;
+	outline-color: #06034e;
+	width: 140px;
+	text-align: center;
+	color: #ffffff;
+	line: height 25px;;
+	padding: .5rem;
+	margin-top: 1rem;
+	cursor:default;
+	border: 0px;
+	font-size: .7rem;
+	letter-spacing: .9px;
+	text-transform: uppercase;
+	transition:cubic-bezier(0.215, 0.610, 0.355, 1);
+}
+
+.ordernow span {
+	cursor: pointer;
+	display: inline-block;
+	position: relative;
+	transition: 0.5s;
+}
+
+.ordernow span::after {
+	content: '\00bb';
+	position: absolute;
+	opacity: 0;
+	top: 0;
+	right: -20px;
+	transition: 0.5s;
+}
+
+/* ========================== 
+	Right column css end here
+ ===========================*/
+
+
+/* ========================== 
+	Footer css start here
+ ===========================*/
+footer {
+	padding: 2rem;
+	background: #f8f8f8;
+	margin-top: 2rem;
+}
+
+.footerwrap {
+	display: flex;
+	gap: 1rem;
+	justify-content: space-between;
+}
+
+.footermenus ul li a {
+	text-decoration: none;
+	color: #000000;
+	margin-top: 1rem;
+	display: block;
+	font-size: .9rem;
+}
+
+.social_icons {
+	display: flex;
+	gap: 1rem;
+}
+
+.social_icons li a ion-icon {
+	font-size: 1.3rem;
+}
+
+/* ========================== 
+	Footer css css end here
+ ===========================*/
+
+
+/* ========================== 
+	Page css end here
+ ===========================*/

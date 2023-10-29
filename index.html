@@ -1,0 +1,561 @@
+<html>
+    <head>
+        <title>
+            Listing Page
+        </title>
+        <link href="listing.css" rel="stylesheet" type="text/css"/>
+    </head>
+    <body><!doctype html>
+      <html lang="en">
+        <head>
+          <!-- Required meta tags -->
+          <meta charset="utf-8">
+          <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+          <!-- Favicon -->
+          <link rel="apple-touch-icon" sizes="180x180" href="https://i.ibb.co/FW2cSdg/apple-touch-icon.png">
+          <link rel="icon" type="image/png" sizes="32x32" href="https://i.ibb.co/209JrZv/favicon-32x32.png">
+          <link rel="icon" type="image/png" sizes="16x16" href="https://i.ibb.co/nQGJ9VK/favicon-16x16.png">
+          <!-- Style CSS -->
+          <link rel="stylesheet" href="css/style.css">
+          <link rel="stylesheet" href="css/mobile.css">
+          <title>Online Food Delivery Website</title>
+        </head>
+        <body>
+          <section class="page_wrapper">
+            <!-- =============
+              Header start here 
+              ================ -->
+            <header id="header" class="d-flex">
+              <div class="logo">
+                
+              </div>
+              <div class="search d-flex">
+                <div class="location_wrap d-flex">
+                  <div class="location-logo">
+                    <ion-icon name="location-outline"></ion-icon>
+                  </div>
+                  <select id="location">
+                    <option value="0">Location:</option>
+                    <option value="1">Mumbai</option>
+                    <option value="2">Delhi</option>
+                    <option value="3">Bangalore</option>
+                    <option value="4">Hyderabad</option>
+                    <option value="5">Chennai</option>
+                    <option value="6">Kolkata</option>
+                    <option value="7">Jaipur</option>
+                    <option value="8">Lucknow</option>
+                    <option value="9">Bhopal</option>
+                    <option value="10">Patna</option>
+                    <option value="11">Ranchi</option>
+                    <option value="12">Chandigarh</option>
+                  </select>
+                </div>
+                <div class="searchwrap d-flex">
+                  <div class="searchicon">
+                    <button type="submit" class="submitsearch">
+                      <ion-icon name="search-outline"></ion-icon>
+                    </button>
+                  </div>
+                  <input type="text" placeholder="Search for restaurant, cuisine or a dish" class="inputsearch">  
+                </div>
+              </div>
+              <div class="desktop-actions">
+                <ul class="d-flex">
+                  <li><a href="#">Log In</a></li>
+                  <li><a href="#">Sign Up</a></li>
+                </ul>
+              </div>
+            </header>
+            <!-- =============
+              Header start here 
+              ================ -->
+            <div class="sortwrap d-flex">
+              <h4>sort results by - </h4>
+              <ul class="d-flex">
+                <li>top results</li>
+                <li>popularity</li>
+                <li>locations</li>
+                <li>offers</li>
+                <li>delivery</li>
+                <li>ratings</li>
+              </ul>
+            </div>
+
+
+
+        <div id="content">
+            <div id="filterDiv">
+                <div class="filters" style="margin-top: 20px;"><h4>Dishes</h4></div>
+                <div class="checkbox">
+                <input type="checkbox"/>
+                <span>Snacks</span>
+                </div>
+                <div class="checkbox">
+                <input type="checkbox"/>
+                <span>Beverages</span>
+                </div>
+                <div class="checkbox">
+                <input type="checkbox"/>
+                <span>North Indian</span>
+                </div>
+                <div>
+                <input type="checkbox"/>
+                <span>South Indian</span>
+                </div>
+                <div class="checkbox">
+                <input type="checkbox"/>
+                <span>Chinese</span>
+                </div>
+                <div class="checkbox">
+                <input type="checkbox"/>
+                <span>Italian</span>
+                </div>
+                <div class="checkbox">
+                <input type="checkbox"/>
+                <span>Desserts</span>
+                </div>
+                <div class="costfortwo-div" style="margin-top:20px;"><h4>Price</h4></div>
+                <div>
+                    <input type="radio" name="costfortwo" />
+                    <span>Less than &#8377;500</span>
+                </div>
+                <div>
+                    <input type="radio" name="costfortwo" />
+                    <span>&#8377;500 - &#8377;1000</span>
+                </div>
+                <div>
+                    <input type="radio" name="costfortwo" />
+                    <span> &#8377;1000 - &#8377;1500</span>
+                </div>
+                <div>
+                    <input type="radio" name="costfortwo" />
+                    <span> &#8377;1500 - &#8377;2000</span>
+                </div>
+                <div>
+                    <input type="radio" name="costfortwo" />
+                    <span> &#8377; 2000+</span>
+                </div>
+                <div class="filters" style="margin-top: 45px;"><h4>Sort</h4></div>
+                <div>
+                    <input type="radio" name="costfortwo" />
+                    <span>Price low to high</span>
+                </div>
+                <div>
+                    <input type="radio" name="costfortwo" />
+                    <span>Price high to low</span>
+                </div>
+                
+                  <div class="filterlocation" style="margin-top: 45px;">
+                    <h4>filter by location</h4>
+                    <ul>
+                      <li>
+                        <input type="checkbox" class="input" name="location" id="rangeone" value="rangeone">
+                        <label for="rangeone">0 - 1 kilometres</label>
+                      </li>
+                      <li>
+                        <input type="checkbox" class="input" name="location" id="rangetwo" value="rangetwo">
+                        <label for="rangetwo">1 - 2 kilometres</label>
+                      </li>
+                      <li>
+                        <input type="checkbox" class="input" name="location" id="rangethree" value="rangethree">
+                        <label for="rangethree">2 - 3 kilometres</label>
+                      </li>
+                      <li>
+                        <input type="checkbox" class="input" name="location" id="rangefour" value="rangefour">
+                        <label for="rangefour">3 - 4 kilometres</label>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <!-- ==========================
+                  Left coloum for filters end 
+                  =============================-->
+                <!-- ==========================
+                  Right coloum for products start 
+                  =============================-->
+                <div class="product_list_wrap">
+                  <ul class="product_list watches_wrap">
+                    <li class="product-base">
+                      <a href="#">
+                        <img src="https://thefoodxp.com/wp-content/uploads/2021/12/KFC-chicken-tenders-500x445.webp" height="315" width="35" alt="">
+                        
+                        <div class="productinfo">
+                          <span class="rating">
+                            <ion-icon name="star"></ion-icon>
+                            <ion-icon name="star"></ion-icon>
+                            <ion-icon name="star"></ion-icon>
+                            <ion-icon name="star"></ion-icon>
+                            4
+                            <div class="veg-non-veg"><img src="https://i.ibb.co/qWmk157/non-veg.png" width="20" alt="non-veg"></div>
+                          </span>
+                          <h3>KFC Chicken Strips</h3>
+                          <p>KFC Juicy tender chicken strips</p>
+                          <div class="price">
+                            <span class="pricetag">Rs. 215</span>
+                            <span class="pricestrike">Rs. 265</span>
+                            <span class="priceoff">(Rs. 50 OFF)</span>
+                          </div>
+                          <button class="ordernow"><span>order now</span></button>
+                        </div>
+                      </a>
+                    </li>
+                    <li class="product-base">
+                      <a href="#">
+                        <img src="https://media.istockphoto.com/photos/fresh-tasty-burger-picture-id495204032?k=20&m=495204032&s=612x612&w=0&h=x44AnT8kHv-apqnG9t1ILwf2sIr4uq14CUB7MBaiuOI=" alt="burger" height="315" width="100%">
+                        <div class="productinfo">
+                          <span class="rating">
+                            <ion-icon name="star"></ion-icon>
+                            <ion-icon name="star"></ion-icon>
+                            <ion-icon name="star"></ion-icon>
+                            <ion-icon name="star-half-outline"></ion-icon>
+                            3.5
+                            <div class="veg-non-veg"><img src="https://i.ibb.co/yPBGp8N/veg.png" width="20" alt="veg"></div>
+                          </span>
+                          <h3>Burger with Fries</h3>
+                          <p>Fresh burger served with french fries</p>
+                          <div class="price">
+                            <span class="pricetag">Rs. 150</span>
+                            <span class="pricestrike">Rs. 180</span>
+                            <span class="priceoff">(Rs. 30 OFF)</span>
+                          </div>
+                          <button class="ordernow"><span>order now</span></button>
+                        </div>
+                      </a>
+                    </li>
+                    <li class="product-base">
+                      <a href="#">
+                        <img src="https://spicedblog.com/wp-content/uploads/2014/06/Oreo-Milkshake.jpg" alt="milkshake">
+                        <div class="productinfo">
+                          <span class="rating">
+                            <ion-icon name="star"></ion-icon>
+                            <ion-icon name="star"></ion-icon>
+                            <ion-icon name="star"></ion-icon>
+                            <ion-icon name="star"></ion-icon>
+                            4
+                            <div class="veg-non-veg"><img src="https://i.ibb.co/yPBGp8N/veg.png" width="20" alt="veg"></div>
+                          </span>
+                          <h3>Oreo Milkshake</h3>
+                          <p>The Classic Oreo Milkshake</p>
+                          <div class="price">
+                            <span class="pricetag">Rs. 175</span>
+                            <span class="pricestrike">Rs. 195</span>
+                            <span class="priceoff">(Rs. 20 OFF)</span>
+                          </div>
+                          <button class="ordernow"><span>order now</span></button>
+                        </div>
+                      </a>
+                    </li>
+                    <li class="product-base">
+                      <a href="#">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT7t-1DtT8rLn-yGiHM-AZ747nt2BszmJWka3N1DDh-jAO417-9m4sXeJaBjoPeClc9gH0&usqp=CAU" alt="schezwan noodles" height="315" width="100%">
+                        <div class="productinfo">
+
+                          <span class="rating">
+                            <ion-icon name="star"></ion-icon>
+                            <ion-icon name="star"></ion-icon>
+                            <ion-icon name="star"></ion-icon>
+                            <ion-icon name="star"></ion-icon>
+                            4
+                            <div class="veg-non-veg"><img src="https://i.ibb.co/yPBGp8N/veg.png" width="20" alt="veg"></div>
+                          </span>
+                          <h3>Veg Schezwan Noodles</h3>
+                          <p> Veg Schezwan Noodles sauteed with fresh veggies and spicy sauces</p>
+                          <div class="price">
+                            <span class="pricetag">Rs. 220</span>
+                            <span class="pricestrike">Rs. 250</span>
+                            <span class="priceoff">(Rs. 30 OFF)</span>
+                          </div>
+                          <button class="ordernow"><span>order now</span></button>
+                        </div>
+                      </a>
+                    </li>
+                    <li class="product-base">
+                      <a href="#">
+                        <img src="https://media-cdn.tripadvisor.com/media/photo-s/0c/82/6b/fb/our-special-masala-dosa.jpg" height="315" width="100%" alt="">
+                        <div class="productinfo">
+                          <span class="rating">
+                            <ion-icon name="star"></ion-icon>
+                            <ion-icon name="star"></ion-icon>
+                            <ion-icon name="star"></ion-icon>
+                            <ion-icon name="star"></ion-icon>
+                            <ion-icon name="star"></ion-icon>
+                            5
+                            <div class="veg-non-veg"><img src="https://i.ibb.co/yPBGp8N/veg.png" width="20" alt="veg"></div>
+                          </span>
+                          <h3>Masala Dosa</h3>
+                          <p>Crispy Masala Dosa with potato onion masala</p>
+                          <div class="price">
+                            <span class="pricetag">Rs. 120</span>
+                            <span class="pricestrike">Rs. 150</span>
+                            <span class="priceoff">(Rs. 30 OFF)</span>
+                          </div>
+                          <button class="ordernow"><span>order now</span></button>
+                        </div>
+                      </a>
+                    </li>
+                    <li class="product-base">
+                      <a href="#">
+                        <img src="https://s3-ap-south-1.amazonaws.com/betterbutterbucket-silver/sayan-majumder145630466456cd7218bf79c.jpeg" height="315" width=100% alt="">
+                        <div class="productinfo">
+                          <span class="rating">
+                            <ion-icon name="star"></ion-icon>
+                            <ion-icon name="star"></ion-icon>
+                            <ion-icon name="star"></ion-icon>
+                            <ion-icon name="star"></ion-icon>
+                            <ion-icon name="star-half-outline"></ion-icon>
+                            4.5
+                            <div class="veg-non-veg"><img src="https://i.ibb.co/qWmk157/non-veg.png" width="20" alt="nonveg"></div>
+                          </span>
+                          <h3>Chicken Tikka Butter Masala</h3>
+                          <p>Rich and creamy Chicken Tikka Butter Masala</p>
+                          <div class="price">
+                            <span class="pricetag">Rs. 330</span>
+                            <span class="pricestrike">Rs. 350</span>
+                            <span class="priceoff">(Rs. 20 OFF)</span>
+                          </div>
+                          <button class="ordernow"><span>order now</span></button>
+                        </div>
+                      </a>
+                    </li>
+                    <li class="product-base">
+                      <a href="#">
+                        <img src="https://images.herzindagi.info/image/2020/Oct/how-to-make-chole-bhature-tasty.jpg" alt="" height="315" width="100%">
+                        <div class="productinfo">
+                          <span class="rating">
+                            <ion-icon name="star"></ion-icon>
+                            <ion-icon name="star"></ion-icon>
+                            <ion-icon name="star"></ion-icon>
+                            <ion-icon name="star-half-outline"></ion-icon>
+                            3.5
+                            <div class="veg-non-veg"><img src="https://i.ibb.co/yPBGp8N/veg.png" width="20" alt="veg"></div>
+                          </span>
+                          <h3>Chhole Bhature</h3>
+                          <p>Hot and puffed up bhature with a tangy and spicy chickpea curry</p>
+                          <div class="price">
+                            <span class="pricetag">Rs. 100</span>
+                            <span class="pricestrike">Rs. 120</span>
+                            <span class="priceoff">(Rs. 20 OFF)</span>
+                          </div>
+                          <button class="ordernow"><span>order now</span></button>
+                        </div>
+                      </a>
+                    </li>
+                    <li class="product-base">
+                      <a href="#">
+                        <img src="https://foodhistoria.com/wp-content/uploads/2020/09/099000895e9a53b62d85c46c4d0d62e4_thumb_1200-1200x900.jpg" alt="" height="315" width="100%">
+                        <div class="productinfo">
+                          <span class="rating">
+                            <ion-icon name="star"></ion-icon>
+                            <ion-icon name="star"></ion-icon>
+                            <ion-icon name="star"></ion-icon>
+                            <ion-icon name="star"></ion-icon>
+                            <ion-icon name="star"></ion-icon>
+                            5
+                            <div class="veg-non-veg"><img src="https://i.ibb.co/yPBGp8N/veg.png" width="20" alt="veg"></div>
+                          </span>
+                          <h3>Idli Sambhar</h3>
+                          <p>Soft fluffy idli with flavourful sambhar</p>
+                          <div class="price">
+                            <span class="pricetag">Rs. 60</span>
+                            <span class="pricestrike">Rs. 90</span>
+                            <span class="priceoff">(Rs. 30 OFF)</span>
+                          </div>
+                          <button class="ordernow"><span>order now</span></button>
+                        </div>
+                      </a>
+                    </li>
+                    <li class="product-base">
+                      <a href="#">
+                        <img src="https://static.toiimg.com/thumb/53110049.cms?width=1200&height=900" alt="pizza" height="315" width="100%">
+                        <div class="productinfo">
+                          <span class="rating">
+                            <ion-icon name="star"></ion-icon>
+                            <ion-icon name="star"></ion-icon>
+                            <ion-icon name="star"></ion-icon>
+                            <ion-icon name="star"></ion-icon>
+                            <ion-icon name="star"></ion-icon>
+                            5
+                            <div class="veg-non-veg"><img src="https://i.ibb.co/yPBGp8N/veg.png" width="20" alt="veg"></div>
+                          </span>
+                          <h3>Veg Margherita Pizza</h3>
+                          <p>Delicious cheesy pizza with your favourite toppings</p>
+                          <div class="price">
+                            <span class="pricetag">Rs. 250</span>
+                            <span class="pricestrike">Rs. 280</span>
+                            <span class="priceoff">(Rs. 30 OFF)</span>
+                          </div>
+                          <button class="ordernow"><span>order now</span></button>
+                        </div>
+                      </a>
+                    </li>
+                    <li class="product-base">
+                      <a href="#">
+                        <img src="https://i0.wp.com/aartimadan.com/wp-content/uploads/2020/07/White-Sauce-Pasta.jpg?fit=1000%2C561&ssl=1" alt="pasta" height="315" width="100%">
+                        <div class="productinfo">
+                          <span class="rating">
+                            <ion-icon name="star"></ion-icon>
+                            <ion-icon name="star"></ion-icon>
+                            <ion-icon name="star"></ion-icon>
+                            <ion-icon name="star"></ion-icon>
+                            <ion-icon name="star"></ion-icon>
+                            5
+                            <div class="veg-non-veg"><img src="https://i.ibb.co/yPBGp8N/veg.png" width="20" alt="veg"></div>
+                          </span>
+                          <h3>White Sauce Pasta</h3>
+                          <p>Perfect Medley of aromatic Flavours,colourful veggies and creamy pasta</p>
+                          <div class="price">
+                            <span class="pricetag">Rs. 170</span>
+                            <span class="pricestrike">Rs. 200</span>
+                            <span class="priceoff">(Rs. 30 OFF)</span>
+                          </div>
+                          <button class="ordernow"><span>order now</span></button>
+                        </div>
+                      </a>
+                    </li>
+                    <li class="product-base">
+                      <a href="#">
+                        <img src="https://storcpdkenticomedia.blob.core.windows.net/media/recipemanagementsystem/media/recipe-media-files/recipes/retail/x17/17244-caramel-topped-ice-cream-dessert-600x600.jpg?ext=.jpg" alt="" height="315" width="100%">
+                        <div class="productinfo">
+                          <span class="rating">
+                            <ion-icon name="star"></ion-icon>
+                            <ion-icon name="star"></ion-icon>
+                            <ion-icon name="star"></ion-icon>
+                            <ion-icon name="star"></ion-icon>
+                            4
+                            <div class="veg-non-veg"><img src="https://i.ibb.co/qWmk157/non-veg.png" width="20" alt="veg"></div>
+                          </span>
+                          <h3>Caramel Topped Ice Cream Cake</h3>
+                          <p>Ice cream cake with fudge and delicious caramel</p>
+                          <div class="price">
+                            <span class="pricetag">Rs. 300</span>
+                            <span class="pricestrike">Rs. 310</span>
+                            <span class="priceoff">(Rs. 10 OFF)</span>
+                          </div>
+                          <button class="ordernow"><span>order now</span></button>
+                        </div>
+                      </a>
+                    </li>
+                    <li class="product-base">
+                      <a href="#">
+                        <img src="https://www.thespruceeats.com/thmb/s4VVcLgOu0eX5lECrBMSjNZ-v2E=/1000x1000/smart/filters:no_upscale()/gluten-free-new-york-cheesecake-1450985-hero-01-dc54f9daf38044238b495c7cefc191fa.jpg" alt="" height="315" width="100%">
+                        <div class="productinfo">
+                          <span class="rating">
+                            <ion-icon name="star"></ion-icon>
+                            <ion-icon name="star"></ion-icon>
+                            <ion-icon name="star"></ion-icon>
+                            <ion-icon name="star"></ion-icon>
+                            <ion-icon name="star"></ion-icon>
+                            5
+                            <div class="veg-non-veg"><img src="https://i.ibb.co/yPBGp8N/veg.png" width="20" alt="veg"></div>
+                          </span>
+                          <h3>Cheesecake</h3>
+                          <p>Delicious Cheesecake a perfect desert option</p>
+                          <div class="price">
+                            <span class="pricetag">Rs. 270</span>
+                            <span class="pricestrike">Rs. 300</span>
+                            <span class="priceoff">(Rs. 30 OFF)</span>
+                          </div>
+                          <button class="ordernow"><span>order now</span></button>
+                        </div>
+                      </a>
+                    </li>
+                    
+
+                  </ul>
+                </div>
+                <!-- ==========================
+                  Right coloum for products end 
+                  =============================-->
+              </div>
+            </div>
+            <!-- ==============
+              Footer start here 
+              =================== -->
+            <footer>
+              <div class="footerwrap">
+                <div class="footermenus">
+                  <h5>ABOUT US</h5>
+                  <ul>
+                    <li><a href="#">Who We Are</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Work With Us</a></li>
+                    <li><a href="#">Investor Relations</a></li>
+                    <li><a href="#">Report Fraud</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                  </ul>
+                </div>
+                <div class="footermenus">
+                </div>
+                <div class="footermenus">
+                  <h5>FOR RESTAURANTS</h5>
+                  <ul>
+                    <li><a href="#">Who We Are</a></li>
+                    <li><a href="#">Partner with us</a></li>
+                    <li><a href="#">Apps for you</a></li>
+                  </ul>
+                </div>
+                <div class="footermenus">
+                  <h5>LEARN MORE</h5>
+                  <ul>
+                    <li><a href="#">Privacy</a></li>
+                    <li><a href="#">Security</a></li>
+                    <li><a href="#">Terms</a></li>
+                    <li><a href="#">Sitemap</a></li>
+                  </ul>
+                </div>
+                <div class="footermenus">
+                  <h5>SOCIAL LINKS</h5>
+                  <ul class="social_icons">
+                    <li>
+                      <a href="#">
+                        <ion-icon name="logo-facebook"></ion-icon>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <ion-icon name="logo-instagram"></ion-icon>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <ion-icon name="logo-twitter"></ion-icon>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <ion-icon name="logo-youtube"></ion-icon>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <ion-icon name="logo-linkedin"></ion-icon>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </footer>
+            <!-- ==============
+              Footer end here 
+              =================== -->
+          </section>
+          <!-- Optional JavaScript -->
+          <script src="js/jQuery-v-3.6.js" type="text/javascript"></script>
+          <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+          <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script> 
+
+
+
+
+
+
+
+
+
+
+
+
+            
+        
+    </body>
+</html>

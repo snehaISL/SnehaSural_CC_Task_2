@@ -1,0 +1,95 @@
+
+@media (max-width: 1200px){
+	html {
+		font-size: 90%;
+	}
+	.filter h4 { 
+		padding: 1rem;
+		font-size: 0.8rem;
+	}
+	.filter ul li {
+	 margin: 1rem; 
+	}
+	.filter {
+		width: 45%;
+	}
+}
+
+@media (max-width: 992px){
+	.main_content {
+		flex-direction: column;
+	}
+	#header { 
+		height: 13rem;
+		position: relative;
+		margin-bottom: 1rem;
+		padding: 0rem 4%;
+	}
+
+	.search {
+		position: absolute;
+		bottom: 20px;
+		left: 50%;
+		transform: translateX(-50%);
+		flex-direction: column;
+		width: 100%;
+	}
+	.inputsearch {
+		width: 300px;
+	}
+	.submitsearch {
+		padding-left: 1rem;
+	}
+	.logo,.desktop-actions {
+		position: relative;
+		top: -60px;
+	}
+	.sortwrap ul {
+		justify-content: space-between;
+	}
+	.sortwrap {
+		flex-direction: column;
+		align-items: center;
+	}
+	.sortwrap h4{
+		margin: 0rem auto 1rem;
+	}
+	.sortwrap ul {
+		flex-wrap: wrap;
+		width: 95%;
+	}
+	.location_wrap {
+		border-radius: 5px;
+	}
+	.searchicon::after {
+		display: none;
+	}
+	.location_wrap {
+		width: 80%;
+		margin-bottom: 1rem;
+		justify-content: normal;
+		border-radius: 0px;
+		height: 37px;
+	}
+	#location {
+		width: calc(100% - 3em);
+	}
+	.searchwrap {
+		width: 80%;
+		justify-content: start;
+		border-radius: 0px;
+	}
+	.filter {
+    	display: flex;
+    	flex-direction: row;
+    	width: 100%;
+    	justify-content: space-evenly;
+    	flex-wrap: wrap;
+	}
+	.filter ul {
+		border-bottom: 0px;
+	}
+	.footerwrap {
+		flex-wrap: wrap;
+	}
+}
